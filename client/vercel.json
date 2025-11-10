@@ -10,12 +10,12 @@
   ],
   "routes": [
     {
-      "src": "/computer",
+      "src": "./computer",
       "dest": "/computer.html"
     },
     {
-      "src": "/public",
-      "dest": "/public.html"
+      "src": "./public",
+      "dest": "./public.html"
     }
   ]
 }
