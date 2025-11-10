@@ -17,6 +17,14 @@
   ],
   "routes": [
     {
+      "src": "/computer",
+      "dest": "/computer.html"
+    },
+    {
+      "src": "/public",
+      "dest": "/public.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
