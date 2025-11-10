@@ -95,3 +95,27 @@ npm run dev
 ✅ Frontend (Vite)
 cd client
 npm run dev
+
+---------------------------------------------------------------------
+
+🧩 Gameplay Rules
+
+✅ 5×5 Bingo grid
+✅ Cells numbered 1–25
+✅ Diagonal, Horizontal, Vertical lines count
+✅ 5 completed lines = BINGO (Win)
+✅ Opponent's board revealed only after match
+
+📝 License
+
+This project is open-source under the MIT License.
+
+👨‍💻 Developer
+
+Gowtham R
+📧 gowthamrajaraman@gmail.com
+
+⭐ Contribute
+
+Pull requests are welcome!
+Feel free to open issues for improvements or bugs.
