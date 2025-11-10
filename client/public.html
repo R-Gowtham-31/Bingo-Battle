@@ -65,7 +65,8 @@
   </div>
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
     <script>
-    const socket = io("http://localhost:3000");
+    const backendURL = process.env.backendurl || 'http://localhost:3000';
+    const socket = io(backendURL);
 
     // UI elements
     const nameInput = document.getElementById('nameInput');
@@ -153,7 +154,7 @@
     createBtn.addEventListener('click', async () => {
       const name = nameInput.value.trim() || 'Player';
       // create room via REST
-      const r = await fetch('http://localhost:3000/create-room', { method:'POST' }).then(r=>r.json());
+      const r = await fetch('backendURL/create-room', { method:'POST' }).then(r=>r.json());
       if (r.roomId) {
         roomInput.value = r.roomId;
         joinRoom(r.roomId, name);
