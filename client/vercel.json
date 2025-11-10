@@ -1,21 +1,24 @@
 {
   "version": 2,
-  "name": "bingo-battle-frontend",
   "public": true,
   "builds": [
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "computer.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "./computer",
-      "dest": "/computer.html"
-    },
-    {
-      "src": "./public",
-      "dest": "./public.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
