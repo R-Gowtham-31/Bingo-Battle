@@ -2,31 +2,14 @@
   "version": 2,
   "public": true,
   "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "computer.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "public.html",
-      "use": "@vercel/static"
-    }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "computer.html", "use": "@vercel/static" },
+    { "src": "public.html", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/computer",
-      "dest": "/computer.html"
-    },
-    {
-      "src": "/public",
-      "dest": "/public.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/computer", "dest": "/computer.html" },
+    { "src": "/public", "dest": "/public.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
