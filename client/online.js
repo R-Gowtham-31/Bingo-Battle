@@ -1,4 +1,4 @@
-const backendURL = "https://bingo-battle-server.onrender.com/";
+const backendURL = "https://bingo-battle-server.onrender.com";
 const socket = io(backendURL);
 console.log('Connecting to backend at', backendURL);
 // UI elements
