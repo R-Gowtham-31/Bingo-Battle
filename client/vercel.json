@@ -14,8 +14,8 @@
       "use": "@vercel/static"
     },
     {
-      "src": "public/**",
-      "use": "@vercel/static"
+      "src": "main.js",
+      "use": "@vercel/static/public"
     }
   ],
   "routes": [
