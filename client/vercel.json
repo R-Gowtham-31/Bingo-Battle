@@ -15,7 +15,15 @@
     },
     {
       "src": "main.js",
-      "use": "@vercel/static/public/main.js"
+      "use": "@vercel/static/"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static/"
+    },
+    {
+      "src": "online.js",
+      "use": "@vercel/static/"
     }
   ],
   "routes": [
