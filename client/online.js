@@ -87,7 +87,7 @@ finalizeBtn.addEventListener('click', ()=>{
 createBtn.addEventListener('click', async () => {
     const name = nameInput.value.trim() || 'Player';
     // create room via REST
-    const r = await fetch('backendURL/create-room', { method:'POST' }).then(r=>r.json());
+    const r = await fetch(`${backendURL}/create-room`, { method:'POST' }).then(r=>r.json());
     if (r.roomId) {
     roomInput.value = r.roomId;
     joinRoom(r.roomId, name);
