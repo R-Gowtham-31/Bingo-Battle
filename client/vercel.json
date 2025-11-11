@@ -15,7 +15,7 @@
     },
     {
       "src": "main.js",
-      "use": "@vercel/static/public"
+      "use": "@vercel/static/public/main.js"
     }
   ],
   "routes": [
